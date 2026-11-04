@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="es"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#531e30">
+<meta name="referrer" content="no-referrer">
+<meta name="robots" content="noindex, nofollow, noarchive, nosnippet, noimageindex">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; base-uri 'none'; object-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; font-src 'none'; connect-src 'none'; form-action 'none'; frame-src 'none'; worker-src 'none'; media-src 'none'; manifest-src 'none'"><meta name="description" content="Una carta de tapas especial para una persona especial.">
+<title>Tapas FODMAP para vencer al FOMO · Carta</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="estilos.css"></head>
+<body>
+<header class="sitehead"><a class="logotype" href="#inicio"><span class="logomark">✦</span><span>FODMAP<span class="dot">.</span>FOMO</span></a><a class="head-link" href="#carta">Descubre la carta <span aria-hidden="true">↗</span></a></header>
+<main>
+<section class="hero" id="inicio">
+<div class="hero-copy"><p class="eyebrow"><span class="tiny-diamond">◆</span> CENA PRIVADA · SOLO DOS CUBIERTOS</p><div class="hero-star">✳</div><h1>Tapas <em>FODMAP</em><br>para vencer<br>al <em>FOMO.</em></h1><p class="hero-sub">Porque perderse una buena tapa no entra en nuestros planes. Hoy eliges tú. Yo pongo las ganas de verte sonreír.</p>
+<a class="primary-button" href="#carta">Abrir nuestra carta <span aria-hidden="true">↗</span></a><div class="mini-hint">11 pequeños caprichos · 1 noche especial</div></div>
+<div class="hero-visual"><img src="imagenes/tapa-12.webp" alt="Mesa romántica con velas y copas, preparada para una cena especial" loading="eager"><div class="hero-badge">MESA <strong>02</strong><small>reservada con cariño</small></div><div class="hero-script">bon appétit, mi amor</div></div>
+</section>
+<section class="interlude"><span>✷</span><p>No es solo una cena. Es una excusa para celebrar <em>lo nuestro.</em></p><span>✷</span></section>
+<section id="carta" class="menu-section"><div class="section-header"><div><p class="eyebrow">EL MENÚ · EDICIÓN ESPECIAL</p><h2>Una carta para<br><em>saborear despacio.</em></h2></div><p>Elige hasta <strong>tres tapas</strong> de nuestra selección. Cada elección tiene una fotografía, una pequeña descripción y sus ingredientes.</p></div>
+<div class="category-bar"><span class="category-label">EXPLORA LOS SABORES</span><div id="filters" class="filters"><button class="filter active" data-filter="all" aria-pressed="true">Todas <span>11</span></button><button class="filter" data-filter="frio" aria-pressed="false">Sin cocina</button><button class="filter" data-filter="caliente" aria-pressed="false">Calientitas</button></div></div>
+<div id="cards" class="menu-grid"></div><p class="pdf-download"><a href="CARTA_PARA_ELLA.pdf" target="_blank" rel="noopener noreferrer">↧ Abrir la carta imprimible en PDF</a></p>
+</section>
+<section class="reservation" id="pedido"><div class="reservation-text"><p class="eyebrow">TU ELECCIÓN, MI PLAN FAVORITO</p><h2>¿Qué te apetece <em>esta noche?</em></h2><p>Escoge tres tapas. Cuando las tengas, te prepararé un ticket de restaurante muy especial.</p></div><div class="basket" id="basket"><div class="basket-head"><strong>Tu pequeña comanda</strong><span id="count">0 / 3</span></div><ol id="basket-list"><li class="empty">Aquí aparecerán las tapas que elijas ♡</li></ol><div class="basket-actions"><button id="reset" class="text-button" type="button">Vaciar selección</button><button id="confirm" class="primary-button" type="button" disabled>Confirmar mis 3 tapas ↗</button></div></div></section>
+<section class="ending"><p class="eyebrow">UN DETALLE DE LA CASA</p><div class="ending-heart">♡</div><h2>Lo mejor del menú <em>siempre serás tú.</em></h2><p>Sea cual sea tu elección, esta noche está preparada con mucho cariño.</p></section>
+</main>
+<footer><span>FODMAP<span class="dot">.</span>FOMO</span><small>Una carta hecha con cariño · Imágenes ilustrativas · Adaptar las raciones a las indicaciones médicas · Sin cuentas ni seguimiento</small></footer>
+<div id="modal" class="modal" hidden><div class="modal-shade" data-close="true"></div><section class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="ticket-title"><button id="close" class="close" type="button" aria-label="Cerrar">×</button><div id="ticket-print" class="ticket"><p class="ticket-kicker">★ CASA FODMAP · MESA PARA DOS ★</p><h2 id="ticket-title">Tu comanda<br><em>está lista.</em></h2><p class="ticket-hint">Ticket de la noche más bonita</p><div class="ticket-rule"></div><p class="ticket-date" id="ticket-date"></p><ol id="ticket-list"></ol><div class="ticket-rule"></div><div class="ticket-total"><span>TOTAL A PAGAR</span><strong>Un beso ♡</strong></div><p class="ticket-note">He preparado esta noche pensando en ti, en tu sonrisa y en todas las cosas bonitas que aún nos quedan por compartir. Gracias por ser mi plan favorito. ❤️</p><p class="ticket-end">Para llevarla a cocina, envíala por WhatsApp ♡</p></div><div class="modal-actions"><button id="print" class="outline-button" type="button">Imprimir / guardar ticket</button><a id="whatsapp" class="primary-button whatsapp-button" href="https://wa.me/?text=" target="_blank" rel="noopener noreferrer">Enviar mi pedido al chef ❤️</a></div><p id="whatsapp-hint" class="whatsapp-hint">Se abrirá WhatsApp con tu pedido escrito. Elige el chat del chef y pulsa Enviar. El pedido no se envía automáticamente.</p></section></div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script defer src="data.js"></script><script defer src="app.js"></script>
+</body></html>
